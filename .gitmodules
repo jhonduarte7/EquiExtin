@@ -1,0 +1,6 @@
+[submodule "backend-extin"]
+	path = backend-extin
+	url = https://github.com/jhonduarte7/backend-extin.git
+[submodule "frontend-extin"]
+	path = frontend-extin
+	url = https://github.com/jhonduarte7/frontend-extin.git
