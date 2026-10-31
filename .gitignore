@@ -1,4 +1,20 @@
-# Operating System & IDE Files
+# ==============================================================================
+# Equi-Extin Master Root .gitignore
+# Strictly excludes environment secrets, IDE configs, build caches, and local tracking
+# ==============================================================================
+
+# --- Environment Variables & Local Secrets ---
+.env
+.env.*
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+!.env.example
+
+# --- Operating System & Editor Files ---
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -12,8 +28,9 @@ desktop.ini
 *.njsproj
 *.sln
 *.sw?
+*.bak
 
-# Build Artifacts & Dependencies
+# --- Build Artifacts & Dependencies ---
 node_modules/
 dist/
 dist-ssr/
@@ -22,16 +39,20 @@ build/
 *.jar
 *.war
 *.class
+.mvn/wrapper/maven-wrapper.jar
 
-# Logs & Runtime Dumps
+# --- Logs & Runtime Dumps ---
 *.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Ephemeral & Local Development Files
+# --- Local Tracking & Ephemeral Developer Files ---
 cookies.txt
-QUESTION.md
+[Qq]uestion*
+QUESTION*
+question/
 *.local
